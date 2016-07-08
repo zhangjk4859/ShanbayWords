@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>shanbayWords.xcscheme</key>
+		<key>ShanbayWords.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0AED93201D2E5F3A00EC0896</key>
+		<key>0AED935A1D2E620D00EC0896</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0AED93341D2E5F3A00EC0896</key>
+		<key>0AED936E1D2E620D00EC0896</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0AED933F1D2E5F3A00EC0896</key>
+		<key>0AED93791D2E620D00EC0896</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0AED93201D2E5F3A00EC0896"
-               BuildableName = "shanbayWords.app"
-               BlueprintName = "shanbayWords"
-               ReferencedContainer = "container:shanbayWords.xcodeproj">
+               BlueprintIdentifier = "0AED935A1D2E620D00EC0896"
+               BuildableName = "ShanbayWords.app"
+               BlueprintName = "ShanbayWords"
+               ReferencedContainer = "container:ShanbayWords.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0AED93341D2E5F3A00EC0896"
-               BuildableName = "shanbayWordsTests.xctest"
-               BlueprintName = "shanbayWordsTests"
-               ReferencedContainer = "container:shanbayWords.xcodeproj">
+               BlueprintIdentifier = "0AED936E1D2E620D00EC0896"
+               BuildableName = "ShanbayWordsTests.xctest"
+               BlueprintName = "ShanbayWordsTests"
+               ReferencedContainer = "container:ShanbayWords.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0AED933F1D2E5F3A00EC0896"
-               BuildableName = "shanbayWordsUITests.xctest"
-               BlueprintName = "shanbayWordsUITests"
-               ReferencedContainer = "container:shanbayWords.xcodeproj">
+               BlueprintIdentifier = "0AED93791D2E620D00EC0896"
+               BuildableName = "ShanbayWordsUITests.xctest"
+               BlueprintName = "ShanbayWordsUITests"
+               ReferencedContainer = "container:ShanbayWords.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0AED93201D2E5F3A00EC0896"
-            BuildableName = "shanbayWords.app"
-            BlueprintName = "shanbayWords"
-            ReferencedContainer = "container:shanbayWords.xcodeproj">
+            BlueprintIdentifier = "0AED935A1D2E620D00EC0896"
+            BuildableName = "ShanbayWords.app"
+            BlueprintName = "ShanbayWords"
+            ReferencedContainer = "container:ShanbayWords.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0AED93201D2E5F3A00EC0896"
-            BuildableName = "shanbayWords.app"
-            BlueprintName = "shanbayWords"
-            ReferencedContainer = "container:shanbayWords.xcodeproj">
+            BlueprintIdentifier = "0AED935A1D2E620D00EC0896"
+            BuildableName = "ShanbayWords.app"
+            BlueprintName = "ShanbayWords"
+            ReferencedContainer = "container:ShanbayWords.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0AED93201D2E5F3A00EC0896"
-            BuildableName = "shanbayWords.app"
-            BlueprintName = "shanbayWords"
-            ReferencedContainer = "container:shanbayWords.xcodeproj">
+            BlueprintIdentifier = "0AED935A1D2E620D00EC0896"
+            BuildableName = "ShanbayWords.app"
+            BlueprintName = "ShanbayWords"
+            ReferencedContainer = "container:ShanbayWords.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

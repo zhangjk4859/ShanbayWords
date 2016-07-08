@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9BE8181D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BE8161D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle */; };
+		0A9BE8191D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BE8171D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle */; };
+		0A9BE81B1D2FC4860001FC6E /* JKBaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BE81A1D2FC4860001FC6E /* JKBaseTabBarVC.swift */; };
 		0AED935F1D2E620D00EC0896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED935E1D2E620D00EC0896 /* AppDelegate.swift */; };
-		0AED93611D2E620D00EC0896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED93601D2E620D00EC0896 /* ViewController.swift */; };
 		0AED93741D2E620D00EC0896 /* ShanbayWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED93731D2E620D00EC0896 /* ShanbayWordsTests.swift */; };
 		0AED937F1D2E620D00EC0896 /* ShanbayWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AED937E1D2E620D00EC0896 /* ShanbayWordsUITests.swift */; };
 		0AED938D1D2E6BD900EC0896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AED938C1D2E6BD900EC0896 /* Assets.xcassets */; };
@@ -32,9 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9BE8161D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShanbayCommonsResources.bundle; sourceTree = "<group>"; };
+		0A9BE8171D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShanbayCommunityResources.bundle; sourceTree = "<group>"; };
+		0A9BE81A1D2FC4860001FC6E /* JKBaseTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBaseTabBarVC.swift; sourceTree = "<group>"; };
 		0AED935B1D2E620D00EC0896 /* ShanbayWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShanbayWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED935E1D2E620D00EC0896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AED93601D2E620D00EC0896 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AED936A1D2E620D00EC0896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AED936F1D2E620D00EC0896 /* ShanbayWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShanbayWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED93731D2E620D00EC0896 /* ShanbayWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanbayWordsTests.swift; sourceTree = "<group>"; };
@@ -94,8 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				0AED935E1D2E620D00EC0896 /* AppDelegate.swift */,
-				0AED93601D2E620D00EC0896 /* ViewController.swift */,
+				0A9BE81A1D2FC4860001FC6E /* JKBaseTabBarVC.swift */,
 				0AED938C1D2E6BD900EC0896 /* Assets.xcassets */,
+				0A9BE8161D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle */,
+				0A9BE8171D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle */,
 				0AED936A1D2E620D00EC0896 /* Info.plist */,
 			);
 			path = ShanbayWords;
@@ -224,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AED938D1D2E6BD900EC0896 /* Assets.xcassets in Resources */,
+				0A9BE8181D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle in Resources */,
+				0A9BE8191D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AED93611D2E620D00EC0896 /* ViewController.swift in Sources */,
+				0A9BE81B1D2FC4860001FC6E /* JKBaseTabBarVC.swift in Sources */,
 				0AED935F1D2E620D00EC0896 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no">
+	    <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="msapplication-tap-highlight" content="no">
+        <title>打卡</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css?ver=1.5.8-debug">
+    </head>
+    <body>
+    <div class="checkin">
+    	<div class="checkin-days">
+    		<span class="num" id="checkin-days-data">0</span>
+    		<div class="des">扇贝打卡天数</div>
+            <div id="used-time-container" class="hide">
+                <img src="./img/used_time_bubble.png" class="special-day" id="special-day">
+                <div id="used-time-bubble">
+                    <span id="used-time">37</span>
+                    <span id="used-time-unit">分钟</span>
+                </div>
+            </div>
+    	</div>
+        <div class="triangle"></div>
+        <div class="data">
+            <table>
+                <tbody>
+                    <tr>
+                        <td id="words-data">0</td>
+                        <td id="reading-data">0</td>
+                        <td id="sentences-data">0</td>
+                        <td id="listening-data">0</td>
+                        <td class="hide" id="used-time-data">0</td>
+                        <td class="hide" id="speak-data">0</td>
+                    </tr>
+                    <tr>
+                        <td>单词</td>
+                        <td>文章</td>
+                        <td>炼句</td>
+                        <td>听力</td>
+                        <td class="hide" id="used-time-display">分钟</td>
+                        <td class="hide" id="speak-display">口语</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="diary-box">
+            <div class="diary tap" onclick="void(0)" id="diary-data-box">
+                <span class="hint" id="diary-hint">清凉夏日，我想说...</span>
+                <p class="data" id="diary-data"></p>
+                <div id="diary-container"></div>
+            </div>
+            <img class="daily-badge hide" src="./img/slipper.png" />
+            <img class="special-day-badge hide" src="./img/speacial_day_badge.png" />
+            <p class="username hide" id="user-name-data">test</p>
+            <div class="segment">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="share-show-btn hide">
+        <div>
+            <img src="./img/icon-share.png" />
+            <p id="share-text">分享有奖</p>
+        </div>
+    </div>
+    <div class="tip hide">
+        <button class="detail">
+            <span>分享＝<span class="num">30</span>贝壳<br><span class="guide">&gt;&gt;&gt;</span></span>
+            <img class="gift" src="./img/gift.png">
+        </button>
+    </div>
+    <div class="share hide">
+        <img src="./img/icon_weibo.png" class="weibo hide tap" onclick="void(0)">
+        <img src="./img/icon_weixin.png" class="weixin hide weixin-moments tap" onclick="void(0)">
+    </div>
+    <script type="text/javascript" src="./scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="./scripts/checkin.js?ver=1.5.8-debug"></script>
+    </body>
+</html>

@@ -1,0 +1,293 @@
+//out: style.css
+
+.tap {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.hide {
+	display: none;
+}
+
+@font-face {
+	font-family: 'Delhi';
+	src: url('./../fonts/Delhi.ttf');
+}
+
+html{
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	padding:0;
+    margin:0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	min-height: 100%;
+	background-color: #34A9D6;
+	width: 100%	;
+}
+
+.checkin{
+	padding: 4.6rem 0 2rem 0;
+	width: 100%;
+	.checkin-days {
+        position:relative;
+		text-align: center;
+        position:relative;
+        margin-bottom: 2.4rem;
+		.stamp,.words{
+			position: absolute;
+		}
+		.stamp{
+			right: 3rem;
+			bottom: -1.2rem;
+			height: 2rem;
+		}
+		.words{
+			bottom: 0rem;
+			right: 1.5rem;
+			width: 1.2rem;
+		}
+        #used-time-container {
+
+            &.large-checkin-days {
+                right: 2rem;
+            }
+
+            position: relative;
+            bottom: 8rem;
+            right: 3rem;
+            height: 0;
+            width: 5rem;
+            float: right;
+
+            .special-day {
+                width: 4rem;
+            }
+            #used-time-bubble {
+                color: #34A9D6;
+                position: relative;
+                bottom: 3.5rem;
+                span {
+                    display: block;
+                }
+                #used-time {
+                    font-size: 22px;
+                }
+                #used-time-unit {
+                    font-weight: 100;
+                    font-size: 12px;
+                }
+            }
+        }
+        .num {
+            font-size: 5rem;
+            font-family:sans-serif;
+            position: relative;
+            display: inline-block;
+            color: white;
+        }
+        .des {
+            position: relative;
+            color: white;
+        }
+    }
+
+    .data {
+        padding: 0 5%;
+		margin-bottom: 2rem;
+		position: relative;
+		.bg,.mountain{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			max-width: 100%;
+		}
+        table {
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            color: white;
+            tr {
+                height: 1.34rem;
+                &:first-of-type {
+                    font-size: 1.7rem;
+                }
+                &:last-of-type {
+                    font-size: 0.8rem;
+                    height: 1.125rem;
+                }
+                td {
+                    width: 20%;
+                    overflow: hidden;
+                    text-overflow: clip;
+                }
+            }
+        }
+    }
+
+    .diary-box {
+		@box-padding-top: 1.125rem;
+		@diary-line-height: 2.48rem;
+
+		margin:0 5% 0;
+        padding:@box-padding-top 5% 3.8rem 5%;
+        text-align: center;
+        position:relative;
+        height: 4*@diary-line-height;
+        background-color: #D5ECF5;
+        border-radius:7px;
+		.tap();
+        .quyuan {
+			position: absolute;
+			height: 2.4rem;
+			top: -2.3rem;
+			left: 1.4rem;
+			z-index: -1;
+        }
+		.special-day-badge, .daily-badge {
+			position: absolute;
+			bottom: 2.1rem;
+			right: 4%;
+			height: 3rem;
+            z-index: 1;
+		}
+        .textarea-img{
+            position:absolute;
+            width:100%;
+            top:0;
+            left:0;
+        }
+        .diary {
+            font-size:1rem;
+            text-align: left;
+            line-height: @diary-line-height;
+			#diary-hint{
+				display: block;
+                margin: 0.6rem 0 0 0;
+				color: #939DA0;
+			}
+            #diary-data{
+				color: #939DA0;
+                padding:0;
+                margin: 0.6rem 0 0 0;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                display:-webkit-box;
+                -webkit-line-clamp:4;
+                -webkit-box-orient:vertical;
+				z-index: 3333;
+				position: relative;
+            }
+        }
+        .username {
+			font-size: 0.9rem;
+			position: absolute;
+			bottom: 1.1rem;
+			right: 4%;
+			margin: 0;
+			color: #949799;
+			float: right;
+            .data {
+                display: inline-block;
+                white-space: nowrap;
+                width: 12rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .segment{
+			position:absolute;
+            width: 90%;
+            top: @box-padding-top;
+            hr{
+                border:0;
+				margin: 0;
+				border-bottom: 1px solid #CFDDE2;
+				height: @diary-line-height;
+				box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.tip{
+    text-align:center;
+    width:100%;
+	margin-bottom: 2.25rem;
+	.tap();
+    .detail{
+        position:relative;
+        box-shadow:none;
+        color:#333333;
+        border:1px solid white;
+        background-color:transparent;
+        border-radius:5px;
+        padding:3% 7%;
+        font-size:0.9rem;
+        .num{
+            color:white;
+        }
+        .guide{
+            color:white;
+            font-size:1rem;
+        }
+        .gift{
+            position:absolute;
+            width:25%;
+            top:-35%;
+            left:-10%;
+        }
+        &:active{
+            outline:0;
+        }
+        &:focus{
+            outline:0;
+        }
+    }
+}
+
+.share-show-btn{
+	color: white;
+	text-align: center;
+	@img-height: 1.35rem;
+	.tap();
+	*{
+		display: inline-block;
+	}
+	>div{
+		border: 1px solid white;
+		border-radius: 30px;
+		padding: 0.6rem 2.6rem;
+		margin-bottom: 2.2rem;
+	}
+	img,p{
+		vertical-align: bottom;
+	}
+	img{
+		height:@img-height;
+	}
+	p{
+		margin: 0;
+		line-height:@img-height;
+	}
+}
+
+@media only screen and (min-width: 425px) {
+	html,body{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	html,body{
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	html,body{
+		font-size: 20px;
+	}
+}

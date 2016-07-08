@@ -1,0 +1,185 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.thread {
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    margin: 0 40px 0 40px;
+}
+
+.post h1{
+    font-size: 20px;
+}
+
+.post h2{
+    font-size: 18px;
+}
+
+.icon-edit{
+    background-image: url(../img/icon_edit.png);
+    position: relative;
+    background-position: 0 5px;
+    padding: 8px 15px;
+    background-repeat: no-repeat;
+}
+
+.icon-reply{
+    background-image: url(../img/icon_reply.png);
+    position: relative;
+    background-position: 0 5px;
+    padding: 8px 15px;
+    background-repeat: no-repeat;
+}
+
+.post{
+    padding: 5px 15px 10px 15px;
+    background-color: #f5f5f5;
+    color: #404040;
+}
+
+.topic-post {
+    background-color: #eae9e9;
+}
+
+.not-bottom-post{
+    border-bottom: 1px dashed #ccc;
+}
+
+.info-row{
+    padding-left: 5px;
+}
+
+.team-info{
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.gray-text{
+    font-size: 16px;
+}
+
+.content-text{
+    font-size: 18px !important;
+}
+
+.user-info{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+p{
+    -webkit-margin-before: 10px;
+    margin-top: 10px;
+}
+
+p em{
+    font-size: 15px;
+}
+
+.thread-title-text{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.avatar{
+    z-index: 0;
+    left: 8px;
+    top: 8px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 21px;
+}
+
+.action-button{
+    color: #999;
+    font-size: 16px;
+    top: 15px;
+    position: relative;
+}
+
+.action-button img{
+    width: 25px;
+    top: -2px;
+    position: relative;
+}
+
+.action-button-reply{
+    padding-left: 10px;
+}
+
+.time-row{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    top: 15px;
+    min-height: 15px;
+    margin-bottom: 10px;
+}
+
+button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+pre{
+    white-space: pre-wrap;
+    margin: 1em;
+}
+
+img{
+    max-width: 658px;
+}
+
+img.user-appended-image{
+    width: 658px;
+}
+
+.title{
+    font-size: 22px;
+}
+
+.post-content{
+    border: 0.1em;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.post-content button{
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 2em;
+}
+
+.post-content .reply-body{
+    font-size: 18px;
+}
+
+.post-content .post-body p{
+    line-height: 1.5em;
+}
+.post-content ul, ol{
+    padding-left: 5px;
+}
+.post-content li{
+    line-height: 1.5em;
+}
+
+.post-agent-text {
+    padding-left: 15px;
+}
+
+.post-agent-source-text {
+    padding-left: 5px;
+}

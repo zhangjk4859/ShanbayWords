@@ -1,0 +1,54 @@
+.thread {
+    border: 1px solid #252525 !important;
+}
+
+.post{
+    background-color: #2d2d2d !important;
+    color: #a3a3a3 !important;
+}
+
+.topic-post{
+    background-color: #373737 !important;
+}
+
+.not-bottom-post{
+    border-bottom: 1px dashed #252525 !important;
+}
+
+blockquote{
+    border-left-color: #747474 !important;
+}
+
+hr{
+    border-top-color: #252525 !important;
+    border-bottom-color: #747474 !important;
+}
+
+a{
+    color: #338b6e !important;
+}
+
+.gray-text{
+    color: #a3a3a3 !important;
+}
+
+.green-text{
+    color: #338b6e !important;
+}
+
+.thread-title-text {
+    background-color: #343434 !important;
+    color: #bebebe !important;
+}
+
+.thread-title-text a{
+    color: #bebebe !important;
+}
+
+.action-button{
+    color: #a3a3a3 !important;
+}
+
+.action-button.active{
+    color: #338b6e !important;
+}

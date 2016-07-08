@@ -1,0 +1,279 @@
+.tap {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.hide {
+  display: none;
+}
+@font-face {
+  font-family: 'Delhi';
+  src: url('../fonts/Delhi.ttf');
+}
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 100%;
+  background-color: #34A9D6;
+  width: 100%	;
+}
+.checkin {
+  padding: 4.6rem 0 2rem 0;
+  width: 100%;
+}
+.checkin .checkin-days {
+  text-align: center;
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+.checkin .checkin-days .stamp,
+.checkin .checkin-days .words {
+  position: absolute;
+}
+.checkin .checkin-days .stamp {
+  right: 3rem;
+  bottom: -1.2rem;
+  height: 2rem;
+}
+.checkin .checkin-days .words {
+  bottom: 0rem;
+  right: 1.5rem;
+  width: 1.2rem;
+}
+.checkin .checkin-days #used-time-container {
+  position: relative;
+  bottom: 8rem;
+  right: 3rem;
+  height: 0;
+  width: 5rem;
+  float: right;
+}
+.checkin .checkin-days #used-time-container.large-checkin-days {
+  right: 2rem;
+}
+.checkin .checkin-days #used-time-container .special-day {
+  width: 4rem;
+}
+.checkin .checkin-days #used-time-container #used-time-bubble {
+  color: #34A9D6;
+  position: relative;
+  bottom: 3.5rem;
+}
+.checkin .checkin-days #used-time-container #used-time-bubble span {
+  display: block;
+}
+.checkin .checkin-days #used-time-container #used-time-bubble #used-time {
+  font-size: 22px;
+}
+.checkin .checkin-days #used-time-container #used-time-bubble #used-time-unit {
+  font-weight: 100;
+  font-size: 12px;
+}
+.checkin .checkin-days .num {
+  font-size: 5rem;
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+.checkin .checkin-days .des {
+  position: relative;
+  color: white;
+}
+.checkin .data {
+  padding: 0 5%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.checkin .data .bg,
+.checkin .data .mountain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  max-width: 100%;
+}
+.checkin .data table {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+.checkin .data table tr {
+  height: 1.34rem;
+}
+.checkin .data table tr:first-of-type {
+  font-size: 1.7rem;
+}
+.checkin .data table tr:last-of-type {
+  font-size: 0.8rem;
+  height: 1.125rem;
+}
+.checkin .data table tr td {
+  width: 20%;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.checkin .diary-box {
+  margin: 0 5% 0;
+  padding: 1.125rem 5% 3.8rem 5%;
+  text-align: center;
+  position: relative;
+  height: 9.92rem;
+  background-color: #D5ECF5;
+  border-radius: 7px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.checkin .diary-box .quyuan {
+  position: absolute;
+  height: 2.4rem;
+  top: -2.3rem;
+  left: 1.4rem;
+  z-index: -1;
+}
+.checkin .diary-box .special-day-badge,
+.checkin .diary-box .daily-badge {
+  position: absolute;
+  bottom: 2.1rem;
+  right: 4%;
+  height: 3rem;
+  z-index: 1;
+}
+.checkin .diary-box .textarea-img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.checkin .diary-box .diary {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 2.48rem;
+}
+.checkin .diary-box .diary #diary-hint {
+  display: block;
+  margin: 0.6rem 0 0 0;
+  color: #939DA0;
+}
+.checkin .diary-box .diary #diary-data {
+  color: #939DA0;
+  padding: 0;
+  margin: 0.6rem 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  z-index: 3333;
+  position: relative;
+}
+.checkin .diary-box .username {
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 1.1rem;
+  right: 4%;
+  margin: 0;
+  color: #949799;
+  float: right;
+}
+.checkin .diary-box .username .data {
+  display: inline-block;
+  white-space: nowrap;
+  width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.checkin .diary-box .segment {
+  position: absolute;
+  width: 90%;
+  top: 1.125rem;
+}
+.checkin .diary-box .segment hr {
+  border: 0;
+  margin: 0;
+  border-bottom: 1px solid #CFDDE2;
+  height: 2.48rem;
+  box-sizing: border-box;
+}
+.tip {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2.25rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.tip .detail {
+  position: relative;
+  box-shadow: none;
+  color: #333333;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 3% 7%;
+  font-size: 0.9rem;
+}
+.tip .detail .num {
+  color: white;
+}
+.tip .detail .guide {
+  color: white;
+  font-size: 1rem;
+}
+.tip .detail .gift {
+  position: absolute;
+  width: 25%;
+  top: -35%;
+  left: -10%;
+}
+.tip .detail:active {
+  outline: 0;
+}
+.tip .detail:focus {
+  outline: 0;
+}
+.share-show-btn {
+  color: white;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.share-show-btn * {
+  display: inline-block;
+}
+.share-show-btn > div {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 0.6rem 2.6rem;
+  margin-bottom: 2.2rem;
+}
+.share-show-btn img,
+.share-show-btn p {
+  vertical-align: bottom;
+}
+.share-show-btn img {
+  height: 1.35rem;
+}
+.share-show-btn p {
+  margin: 0;
+  line-height: 1.35rem;
+}
+@media only screen and (min-width: 425px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}

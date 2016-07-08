@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title id="thread-title"></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/thread_base.css" rel="stylesheet" type="text/css" />
+        <script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery.tmpl.min.js" type="text/javascript"></script>
+        <script src="scripts/underscore-min.js" type="text/javascript"></script>
+        <script src="scripts/markdown.min.js" type="text/javascript"></script>
+        <script src="scripts/date.js" type="text/javascript"></script>
+        <script src="scripts/app.js" type="text/javascript"></script>
+
+        <script id="post-content-tmpl" type="text/x-jquery-tmpl">
+            {{html content}}
+        </script>
+        <script id="thread-tmpl" type="text/x-jquery-tmpl">
+            <div class="thread-title-text content-text">
+                ${t.title}
+            </div>
+        </script>
+        <script id="posts-tmpl" type="text/x-jquery-tmpl">
+            {{each posts}}
+
+                    {{if ($value.js_is_topic)}}
+                        <div class="topic-post post" id="post-${$value.id}">
+                    {{else}}
+                        <div class="post" id="post-${$value.id}">
+                    {{/if}}
+
+                    <div>
+                        <div>
+                            <img class="avatar" onClick="callUser('${$value.author.id}');" src="${$value.author.avatar}" />
+                        </div>
+                        <button onClick="callUser('${$value.author.id}');" class="user-info green-text content-text" data="${$value.author.id}">${$value.author.nickname}</button>
+                        {{if $value.team}}
+                            <button onClick="callTeam('${$value.team.id}');" class="pull-right gray-text team-info content-text" data="${$value.team.id}">小组：${$value.team.title}
+                            </button>
+                        {{/if}}
+                    </div>
+                    <div class="clear"></div>
+                    <div class="post-content content-text">
+                        {{if $value.post_to}}
+                        <p class="reply-body">回复 <button class="green-text" onClick="callUser('${$value.post_to.id}');">${$value.post_to.nickname}</button>:</p>
+                        {{/if}}
+                        <div class="post-body">
+                            {{html $value.js_body_html}}
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="info-row">
+                        <div class="gray-text pull-left time-row">
+                            ${$value.js_fancy_time}
+                        </div>
+                        <a class="post-agent-text gray-text pull-left time-row">发自</a>
+                        {{if (($value.agent.product_name && $value.agent.product_name == "web") || ($value.agent.name == "web"))}}
+                            <div class="post-agent-source-text gray-text pull-left time-row">网页版</div>
+                        {{else ($value.agent.name && $value.agent.product_name)}}
+                            <button onClick="callUserAgentFromPost('${$value.id}');" class="post-agent-source-text green-text gray-text pull-left time-row">${$value.agent.name}</button>
+                        {{/if}}
+                        {{if !$value.thread.dead&&!$value.thread.closed}}
+                            <button onClick="replyPost('${$value.id}');" class="pull-right action-button action-button-reply"><img src="img/icon_reply.png" /><span>回复</span></button>
+                        {{/if}}
+                        {{if $value.author.id == user_id}}
+                            <button onClick="editPost('${$value.id}');" class="pull-right action-button action-button-edit"><img src="img/icon_edit.png" /><span>编辑</span></button>
+                        {{/if}}
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            {{/each}}
+        </script>
+    </head>
+    <body>
+        <div class="thread" id="thread">
+            <div class="thread-title">
+            </div>
+            <div class="thread-posts">
+            </div>
+        </div>
+    </body>
+</html>

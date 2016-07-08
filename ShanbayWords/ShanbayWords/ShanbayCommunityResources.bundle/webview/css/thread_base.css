@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+hr {
+    border: 1px;
+    border-style: solid none solid none;
+}
+
+a{
+    text-decoration: none;
+    word-wrap: break-word;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.thread-title-text {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+.green-text{
+    color: #209E85;
+}
+
+.content-text{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

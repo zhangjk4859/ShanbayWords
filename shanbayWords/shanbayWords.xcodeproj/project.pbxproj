@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A03E6D31D3164D0004B74FC /* JKWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03E6D21D3164D0004B74FC /* JKWordsVC.swift */; };
+		0A03E6D51D3164E8004B74FC /* JKCommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03E6D41D3164E8004B74FC /* JKCommunityVC.swift */; };
+		0A03E6D71D316509004B74FC /* JKMyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03E6D61D316509004B74FC /* JKMyProfileVC.swift */; };
 		0A9BE8181D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BE8161D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle */; };
 		0A9BE8191D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BE8171D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle */; };
 		0A9BE81B1D2FC4860001FC6E /* JKBaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BE81A1D2FC4860001FC6E /* JKBaseTabBarVC.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A03E6D21D3164D0004B74FC /* JKWordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKWordsVC.swift; sourceTree = "<group>"; };
+		0A03E6D41D3164E8004B74FC /* JKCommunityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKCommunityVC.swift; sourceTree = "<group>"; };
+		0A03E6D61D316509004B74FC /* JKMyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKMyProfileVC.swift; sourceTree = "<group>"; };
 		0A9BE8161D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShanbayCommonsResources.bundle; sourceTree = "<group>"; };
 		0A9BE8171D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShanbayCommunityResources.bundle; sourceTree = "<group>"; };
 		0A9BE81A1D2FC4860001FC6E /* JKBaseTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBaseTabBarVC.swift; sourceTree = "<group>"; };
@@ -74,6 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A03E6CF1D316460004B74FC /* 扇贝单词 */ = {
+			isa = PBXGroup;
+			children = (
+				0A03E6D21D3164D0004B74FC /* JKWordsVC.swift */,
+			);
+			path = "扇贝单词";
+			sourceTree = "<group>";
+		};
+		0A03E6D01D31646C004B74FC /* 社区 */ = {
+			isa = PBXGroup;
+			children = (
+				0A03E6D41D3164E8004B74FC /* JKCommunityVC.swift */,
+			);
+			path = "社区";
+			sourceTree = "<group>";
+		};
+		0A03E6D11D316475004B74FC /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				0A03E6D61D316509004B74FC /* JKMyProfileVC.swift */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
 		0AED93521D2E620D00EC0896 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +129,9 @@
 			children = (
 				0AED935E1D2E620D00EC0896 /* AppDelegate.swift */,
 				0A9BE81A1D2FC4860001FC6E /* JKBaseTabBarVC.swift */,
+				0A03E6CF1D316460004B74FC /* 扇贝单词 */,
+				0A03E6D01D31646C004B74FC /* 社区 */,
+				0A03E6D11D316475004B74FC /* 我的 */,
 				0AED938C1D2E6BD900EC0896 /* Assets.xcassets */,
 				0A9BE8161D2FC3DB0001FC6E /* ShanbayCommonsResources.bundle */,
 				0A9BE8171D2FC3DB0001FC6E /* ShanbayCommunityResources.bundle */,
@@ -257,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9BE81B1D2FC4860001FC6E /* JKBaseTabBarVC.swift in Sources */,
+				0A03E6D71D316509004B74FC /* JKMyProfileVC.swift in Sources */,
+				0A03E6D51D3164E8004B74FC /* JKCommunityVC.swift in Sources */,
 				0AED935F1D2E620D00EC0896 /* AppDelegate.swift in Sources */,
+				0A03E6D31D3164D0004B74FC /* JKWordsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

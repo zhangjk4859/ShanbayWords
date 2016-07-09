@@ -8,28 +8,26 @@
 
 import UIKit
 
-class JKBaseTabBarVC: UITabBarController {
+class JKBaseTabBarVC: UITabBarController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        setupChildViewController(JKWordsVC(), name: "扇贝单词", image: UIImage(named: "icon_home")!, selectedImage: UIImage(named: "icon_home")!)
 
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //统一生成子控制器
+    func setupChildViewController(vc:UIViewController!,name:String,image:UIImage,selectedImage:UIImage)
+    {
+        addChildViewController(vc)
+        vc.tabBarItem.title = name
+        vc.tabBarItem.image = image
+        vc.tabBarItem.selectedImage = selectedImage
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

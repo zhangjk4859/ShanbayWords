@@ -13,6 +13,26 @@ class JKWordsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarItem.title = "扇贝单词"
+        //view.backgroundColor = UIColor.redColor()
+        
+        //添加标题栏
+        let titleView = UIView()
+        titleView.frame = CGRect(x: 0, y: 64, width: view.frame.size.width, height:30)
+        view.addSubview(titleView)
+        titleView.backgroundColor = UIColor.purpleColor()
+        
+        //添加四个按钮
+        
+        let width = view.frame.size.width / 4
+        for index in 0...3{
+            let btn = UIButton()
+            
+            let btnX = index * width
+            
+            btn.frame = CGRect(x: btnX , y: 0, width: width, height: 30)
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,13 +14,21 @@ class JKBaseTabBarVC: UITabBarController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        setupChildViewController(JKWordsVC(), name: "扇贝单词", image: UIImage(named: "icon_home")!, selectedImage: UIImage(named: "icon_home")!)
+        //setupChildViewController(JKWordsVC(), name: "扇贝单词", image: UIImage(named: "icon_home")!, selectedImage: UIImage(named: "icon_home")!)
+        
 
+        let wordVC = JKWordsVC()
+        addChildViewController(wordVC)
+        wordVC.tabBarItem.title = "扇贝单词"
+        wordVC.tabBarItem.image = UIImage(named: "icon_home")
+        wordVC.tabBarItem.selectedImage = UIImage(named: "icon_home")
+        
+        
         
     }
 
     //统一生成子控制器
-    func setupChildViewController(vc:UIViewController!,name:String,image:UIImage,selectedImage:UIImage)
+   private func setupChildViewController(vc:UIViewController,name:String,image:UIImage,selectedImage:UIImage)
     {
         addChildViewController(vc)
         vc.tabBarItem.title = name

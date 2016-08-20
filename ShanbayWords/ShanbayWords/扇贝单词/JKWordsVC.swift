@@ -19,19 +19,6 @@ class JKWordsVC: UIViewController {
         view.addSubview(titleView)
         
         
-//        //添加四个按钮
-//        
-//        let width = view.frame.size.width / 4
-//        for index in 0...3{
-//            let btn = UIButton()
-//            
-//            let btnX = index * width
-//            
-//            btn.frame = CGRect(x: btnX , y: 0, width: width, height: 30)
-//            
-//        }
-        
-        //设置tableView
         
         
         
@@ -46,7 +33,8 @@ class JKWordsVC: UIViewController {
         titleView.frame = CGRect(x: 0, y: 64, width: UIScreen.mainScreen().bounds.size.width, height:30)
         titleView.backgroundColor = UIColor.purpleColor()
         return titleView
-        }()
+        
+    }()
 
 
 }

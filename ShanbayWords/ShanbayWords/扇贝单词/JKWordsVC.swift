@@ -17,6 +17,11 @@ class JKWordsVC: UIViewController {
         
         //添加标题栏
         view.addSubview(titleView)
+        //增加一个textField
+        
+        //增加一个查询按钮
+        
+        //webView展示图片
         
         
         

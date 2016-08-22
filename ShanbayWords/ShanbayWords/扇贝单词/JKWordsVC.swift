@@ -18,17 +18,28 @@ class JKWordsVC: UIViewController {
         //添加标题栏
         view.addSubview(titleView)
         //增加一个textField
+        let textField = UITextField()
+        textField.frame = CGRectMake(0, CGRectGetMaxY(titleView.frame), 200, 30)
+        view.addSubview(textField)
+        textField.backgroundColor = UIColor.redColor()
         
         //增加一个查询按钮
+        let searchBtn = UIButton()
+        searchBtn.frame = CGRectMake(0, CGRectGetMaxY(textField.frame), 200, 30)
+        view.addSubview(searchBtn)
+        
         
         //webView展示图片
+        searchBtn.addTarget(self, action: #function(pushVC), forControlEvents: UIControlEventTouchUpInside)
         
         
         
-        
-        
-        
-        
+    }
+    
+    private func pushVC(){
+    
+        let pushVC = PictureViewController()
+        navigationController?.pushViewController(pushVC, animated: true)
     }
     
     

@@ -24,22 +24,27 @@ class JKWordsVC: UIViewController {
         textField.backgroundColor = UIColor.redColor()
         
         //增加一个查询按钮
-        let searchBtn = UIButton()
+        let searchBtn = UIButton(type: UIButtonType.System)
         searchBtn.frame = CGRectMake(0, CGRectGetMaxY(textField.frame), 200, 30)
+        searchBtn.setTitle("查询图片", forState: UIControlState.Normal)
+        searchBtn.addTarget(self, action:#selector(JKWordsVC.testAction) , forControlEvents: UIControlEvents.TouchUpInside)
+        searchBtn.backgroundColor = UIColor.blueColor()
         view.addSubview(searchBtn)
         
         
         //webView展示图片
-        searchBtn.addTarget(self, action: #function(pushVC), forControlEvents: UIControlEventTouchUpInside)
-        
-        
+       
         
     }
     
-    private func pushVC(){
+   private func pushVC(textField:UITextField){
     
-        let pushVC = PictureViewController()
-        navigationController?.pushViewController(pushVC, animated: true)
+//        let pushVC = PictureViewController()
+//        navigationController?.pushViewController(pushVC, animated: true)
+        print("123")
+    }
+    func testAction(){
+        print("testAction")
     }
     
     
